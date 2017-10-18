@@ -1,0 +1,26 @@
+{
+  "name": "WebSocketWithBarebonePHP",
+  "authors": [
+    "notalentgeek <mikael.pratama@gmail.com>"
+  ],
+  "description": "This project is meant to show simple implementation of WebSocket with PHP.",
+  "main": "",
+  "keywords": [
+    "WebSocket",
+    "PHP",
+    "SocketIO"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.2.1"
+  }
+}

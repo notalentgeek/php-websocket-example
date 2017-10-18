@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Simple PHP WebSocket Demonstration</title>
+
+  <!-- Import all WebSocket related JavaScript library here. -->
+  <script src="./ws.js"></script>
+
+  <!-- Style -->
+  <style>
+    .width-4th {
+      width: 25%;
+    }
+    #main-button-container {
+      align-items: center;
+      display:flex;
+      flex-direction: column;
+    }
+    #ws-event, #ws-id {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Client `resourceId` from the WebSocket Server -->
+  <div id='ws-id'></div>
+
+  <!-- Event just received. -->
+  <div id='ws-event'></div>
+
+  <div id='main-button-container'>
+    <!-- Button to send message to all connected clients -->
+    <button class='width-4th' id='broadcast-button'
+      onclick="WS_EVENT_SEND.BroadcastMessageToAllClients()">
+      broadcast
+    </button>
+  </div>
+
+  <!-- Import non-WebSocket JavaScript libraries -->
+  <script src='../../bower_components/jquery/dist/jquery.js'></script>
+</body>
+</html>
